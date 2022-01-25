@@ -72,7 +72,7 @@ const PublishDetails = () => {
                className='form-label'>
                 Link: 
               </label>
-              <input type='text' 
+              <input type='link' 
                     name='description'
                     className='form-input'
                     placeholder='Enter Link To Purchase Tickets'

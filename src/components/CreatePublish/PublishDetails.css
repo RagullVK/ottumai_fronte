@@ -30,6 +30,8 @@
   height: 40px;
   width: 100%;
   border: none;
+  color: white;
+  outline: none;
   background-color: #231f20;
   border-style: solid;
   border-color: #ffb8bf;
