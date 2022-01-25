@@ -1,5 +1,6 @@
 import React from 'react';
 import useDetails from './useDetails';
+import './PublishDetails.css'
 
 const PublishDetails = () => {
   const {handleChange,values} = useDetails();
@@ -12,12 +13,13 @@ const PublishDetails = () => {
           <div className='form-inputs'>
               <label htmlFor='community'
                className='form-label'>
-                Community
+                Community: 
+                ('South Asian',  'African & Caribbean',  'East & South East Asian',  'South West European' or 'Hispanic')
               </label>
               <input type='text' 
                     name='community'
                     className='form-input'
-                    placeholder='Enter Target Community'
+                    placeholder='Enter Community From Options Above As Depicted'
                     value={values.community}
                     onChange={handleChange}
                     />
@@ -26,7 +28,7 @@ const PublishDetails = () => {
           <div className='form-inputs'>
               <label htmlFor='title'
                className='form-label'>
-                Title
+                Title:
               </label>
               <input type='text' 
                     name='title'
@@ -38,28 +40,14 @@ const PublishDetails = () => {
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='description'
-               className='form-label'>
-                Description 
-              </label>
-              <input type='text' 
-                    name='description'
-                    className='form-input'
-                    placeholder='Enter Event Description'
-                    value={values.description}
-                    onChange={handleChange}
-                    />
-          </div>
-
-          <div className='form-inputs'>
               <label htmlFor='cost'
                className='form-label'>
-                Cost 
+                Cost: 
               </label>
               <input type='text' 
                     name='cost'
                     className='form-input'
-                    placeholder='Enter Ticket cost'
+                    placeholder='Enter Ticket Cost'
                     value={values.cost}
                     onChange={handleChange}
                     />
@@ -68,13 +56,27 @@ const PublishDetails = () => {
           <div className='form-inputs'>
               <label htmlFor='date'
                className='form-label'>
-                Date   
+                Date:  
               </label>
               <input type='text' 
                     name='date'
                     className='form-input'
                     placeholder='Enter Event Date'
                     value={values.date}
+                    onChange={handleChange}
+                    />
+          </div>
+
+          <div className='form-inputs'>
+              <label htmlFor='link'
+               className='form-label'>
+                Link: 
+              </label>
+              <input type='text' 
+                    name='description'
+                    className='form-input'
+                    placeholder='Enter Link To Purchase Tickets'
+                    value={values.description}
                     onChange={handleChange}
                     />
           </div>

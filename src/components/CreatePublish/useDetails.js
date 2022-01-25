@@ -4,12 +4,10 @@ const useDetails = () =>{
     const [values,setValues] = useState({
         community:'',
         title:'',
-        descption:'',
         cost: '',
-        date: ''
+        date: '',
+        link:'',
     })
-
-    const [errors, setErrors] = useState({})
 
     const handleChange = e => {
         setValues({
