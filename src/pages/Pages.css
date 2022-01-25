@@ -5,6 +5,7 @@
 .myAccount {
   background: linear-gradient(to top left, #231f20, black);
   height: 90vh;
+  display: flex;
 }
 
 h1 {

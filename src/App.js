@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import NavBar from './components/Navbar';
+import Navbar from './components/Navigation/Navbar';
 import Home from './pages/Home';
 import Publish from './pages/Publish';
 import MyAccount from './pages/MyAccount'
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar/>
+        <Navbar/>
         <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/publish' component={Publish}/>

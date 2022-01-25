@@ -1,0 +1,74 @@
+.cardTitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.cost {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  position: absolute;
+  margin-left: 280px;
+  font-size: 2rem;
+}
+.date {
+  font-size: 1.2rem;
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 0.8rem;
+}
+
+.address {
+  font-size: 17px;
+  margin-left: 1rem;
+}
+
+.cardTitle:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+}
+
+.card-con {
+  width: 350px;
+  height: 150px;
+  background-color: #ffb8bf;
+  border-radius: 4px;
+}
+
+.buttons {
+  width: 30%;
+  margin-top: 10rem;
+}
+
+.btn {
+  width: 250px;
+  height: 70px;
+  background-color: #231f20;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-display: center;
+  color: white;
+  position: relative;
+  margin-left: 15rem;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #231f20;
+  border-right: 15px;
+  border-style: solid;
+  border-color: #ffb8bf;
+}
