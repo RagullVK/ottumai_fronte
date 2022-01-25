@@ -24,7 +24,8 @@ function Home() {
 }
 
   return <div className='home'>
-      <h1 >Home</h1>
+      <h1 className='pageTitle' >Home</h1>
+      <h1 className='bigHeading'>Select A Motive</h1>
 
       <Button button={buttons} filter={filter}/>
       <Card motiveCard={motiveCard}/>
