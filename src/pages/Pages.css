@@ -27,6 +27,7 @@
   left: 255px;
   top: 105px;
   font-weight: 900;
+  background-color: black;
   z-index: 1;
 }
 
@@ -39,4 +40,12 @@
   top: 130px;
   font-weight: 900;
   z-index: 1;
+}
+
+.logo {
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  right: 25px;
+  top: 15px;
 }

@@ -3,23 +3,23 @@ export default[
         id:1,
         community: 'South Asian',
         title: 'Tamil Crystal Ball',
-        decs: 'This is a Tamli fomarl event',
         addi1: '1 South Way',
         addi2: 'Wembley',
         postcode: 'HA9 OHB',
         cost: 'Free',
-        date: '15 March'
+        date: '15 March',
+        link: 'https://www.eventbrite.co.uk/d/united-kingdom--london/tamil/?page=1'
     },
 
     {
         id:2,
         community: 'African & Caribbean',
         title: 'I LUV SoCa',
-        decs: 'Carnival',
         addi1: '1 South Way',
         addi2: 'Wembley',
         postcode: 'HA9 OHB',
         cost: 'Free',
-        date: '19 March'
-    }
+        date: '19 March',
+        link: 'https://www.youtube.com/watch?v=vHU6ZRQJ50Q'
+    },
 ]
