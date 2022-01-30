@@ -7,6 +7,9 @@ const useDetails = () =>{
         cost: '',
         date: '',
         link:'',
+        address1:'',
+        address2:'',
+        postcode:'',
     })
 
     const handleChange = e => {

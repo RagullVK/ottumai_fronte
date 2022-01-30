@@ -1,24 +1,22 @@
 .form {
   position: absolute;
-  margin-left: 12rem;
-  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-left: 7rem;
+  margin-top: 10rem;
   width: 45rem;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 25rem;
   background-image: linear-gradient(black);
 }
 
 .form-inputs {
-  margin-bottom: 0.5rem;
-  width: 80%;
+  margin-right: 3rem;
 }
 
 .form-label {
   display: inline-block;
-  font-size: 17px;
+  font-size: inherit;
   margin-bottom: 6px;
   color: white;
 }
@@ -28,8 +26,7 @@
   padding-left: 10px;
   border-radius: 2px;
   height: 40px;
-  width: 100%;
-  border: none;
+  width: 600px;
   color: white;
   outline: none;
   background-color: #231f20;
@@ -37,10 +34,12 @@
   border-color: #ffb8bf;
 }
 
-.form-input-btn {
-  width: 15rem;
+.input-btn {
+  width: 12rem;
   height: 3rem;
-  margin-top: 10px;
+  position: absolute;
+  margin-top: 420px;
+  margin-left: 35rem;
   border-radius: 4px;
   background-color: #ffb8bf;
   border: none;
@@ -48,7 +47,7 @@
   font-size: 1rem;
 }
 
-.form-input-btn:hover {
+.input-btn:hover {
   cursor: pointer;
   color: white;
   transition: all 0.4s ease-out;

@@ -26,6 +26,20 @@ const PublishDetails = () => {
           </div>
 
           <div className='form-inputs'>
+              <label htmlFor='address1'
+               className='form-label'>
+                Address Line 1: 
+              </label>
+              <input type='text' 
+                    name='address1'
+                    className='form-input'
+                    placeholder='Enter Address Line 1'
+                    value={values.address1}
+                    onChange={handleChange}
+                    />
+          </div>
+
+          <div className='form-inputs'>
               <label htmlFor='title'
                className='form-label'>
                 Title:
@@ -35,6 +49,20 @@ const PublishDetails = () => {
                     className='form-input'
                     placeholder='Enter Event Name'
                     value={values.title}
+                    onChange={handleChange}
+                    />
+          </div>
+
+          <div className='form-inputs'>
+              <label htmlFor='address2'
+               className='form-label'>
+                Address Line 2: 
+              </label>
+              <input type='text' 
+                    name='address2'
+                    className='form-input'
+                    placeholder='Enter Address Line 2'
+                    value={values.address2}
                     onChange={handleChange}
                     />
           </div>
@@ -52,6 +80,21 @@ const PublishDetails = () => {
                     onChange={handleChange}
                     />
           </div>
+
+          <div className='form-inputs'>
+              <label htmlFor='postcode'
+               className='form-label'>
+                Postcode: 
+              </label>
+              <input type='text' 
+                    name='postcode'
+                    className='form-input'
+                    placeholder='Enter Postcode'
+                    value={values.postcode}
+                    onChange={handleChange}
+                    />
+          </div>
+
           
           <div className='form-inputs'>
               <label htmlFor='date'
@@ -73,14 +116,14 @@ const PublishDetails = () => {
                 Link: 
               </label>
               <input type='link' 
-                    name='description'
+                    name='link'
                     className='form-input'
                     placeholder='Enter Link To Purchase Tickets'
-                    value={values.description}
+                    value={values.link}
                     onChange={handleChange}
                     />
           </div>
-          <button className='form-input-btn'
+          <button className='input-btn'
           type='submit'>
               Publish
           </button>

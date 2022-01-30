@@ -1,0 +1,68 @@
+.tracking-con {
+  margin-top: 10rem;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.tracking-con::-webkit-scrollbar {
+  display: none;
+}
+
+.tracking-form {
+  margin-left: 15rem;
+}
+
+.tracking-input {
+  height: 40px;
+  width: 300px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #ffb8bf;
+  background-color: #231f20;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+}
+
+.tracking-btn {
+  height: 40px;
+  width: 100px;
+  border-style: solid;
+  border-color: #ffb8bf;
+  background-color: #ffb8bf;
+  font-weight: bold;
+}
+
+.tracking-btn:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.4s ease-out;
+}
+
+.tracking-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #231f20;
+  margin: 10px auto;
+  margin-left: 15rem;
+  width: 400px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #ffb8bf;
+  padding-left: 10px;
+  outline: none;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffb8bf;
+}
+
+.edit-icon {
+  margin-left: 5px;
+}

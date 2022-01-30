@@ -10,11 +10,13 @@
   margin-left: 280px;
   margin-top: 8.8rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .date {
   font-size: 1.2rem;
   margin-left: 1rem;
+  font-weight: bold;
 }
 
 .address {
@@ -71,7 +73,7 @@
 }
 
 .btn {
-  width: 250px;
+  width: 300px;
   height: 70px;
   background-color: #231f20;
   border: none;
