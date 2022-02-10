@@ -14,15 +14,18 @@ const PublishDetails = () => {
               <label htmlFor='community'
                className='form-label'>
                 Community: 
-                ('South Asian',  'African & Caribbean',  'East & South East Asian',  'South West European' or 'Hispanic')
               </label>
-              <input type='text' 
+              <select type='text' 
                     name='community'
                     className='form-input'
                     placeholder='Enter Community From Options Above As Depicted'
-                    value={values.community}
-                    onChange={handleChange}
-                    />
+                    onChange={handleChange}>
+                <option value = 'ACcomm'> African or Caribbean </option>  
+                <option value = 'SEAcomm'> East or South East Asain </option>
+                <option value = 'Hcomm'> Hispanic </option>
+                <option value = 'SAcomm'> South Asain </option>
+                <option value = 'SWEcomm'> South West European </option>
+              </select>       
           </div>
 
           <div className='form-inputs'>

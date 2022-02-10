@@ -47,11 +47,13 @@
   margin: 10px auto;
   margin-left: 15rem;
   width: 400px;
+
   border-radius: 2px;
   border-style: solid;
   border-color: #ffb8bf;
-  padding-left: 10px;
   outline: none;
+
+  padding-left: 10px;
   color: white;
 }
 
@@ -65,4 +67,39 @@
 
 .edit-icon {
   margin-left: 5px;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: inherit;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.form-inputs {
+  margin-top: 20px;
+}
+
+.form-display {
+  display: block;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 2px;
+  height: 40px;
+  width: 400px;
+
+  outline: none;
+  background-color: #231f20;
+  border-style: solid;
+  border-color: #ffb8bf;
+
+  color: white;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.details-content {
+  margin-left: 14rem;
+  margin-top: 8rem;
 }

@@ -42,6 +42,17 @@
   z-index: 1;
 }
 
+.bigHeading2 {
+  font-size: 2.5rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #ffb8bf;
+  position: absolute;
+  left: 850px;
+  top: 130px;
+  font-weight: 900;
+  z-index: 1;
+}
+
 .logo {
   height: 50px;
   width: 150px;
