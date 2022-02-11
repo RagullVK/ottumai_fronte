@@ -4,7 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   margin-left: 7rem;
-  margin-top: 10rem;
+  margin-top: 8.5rem;
   width: 45rem;
   height: 25rem;
   background-image: linear-gradient(black);
@@ -38,7 +38,7 @@
   width: 12rem;
   height: 3rem;
   position: absolute;
-  margin-top: 420px;
+  margin-top: 444px;
   margin-left: 35rem;
   border-radius: 4px;
   background-color: #ffb8bf;

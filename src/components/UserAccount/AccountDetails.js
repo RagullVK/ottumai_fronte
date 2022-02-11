@@ -1,6 +1,10 @@
+import { useAuth0 } from '@auth0/auth0-react'
 import React from 'react'
 
 function AccountDetails() {
+
+  const {user} = useAuth0();
+    
   return (
     <div className='details-content'>
         <div className='form-inputs'>
@@ -9,7 +13,7 @@ function AccountDetails() {
                 Username: 
             </label>
             <p type='text' name='username' className='form-display'>
-                NameSomething123
+                {user.nickname}
             </p>
         </div>
 
@@ -19,20 +23,9 @@ function AccountDetails() {
                 Email: 
             </label>
             <p type='text' name='email' className='form-display'>
-                Name@outlook.com
+                {user.email}
             </p>
         </div>
-
-        <div className='form-inputs'>
-            <label htmlFor='password'
-               className='form-label'>
-                Password: 
-            </label>
-            <p type='text' name='password' className='form-display'>
-                *********
-            </p>
-        </div>
-
     </div>
   )
 }

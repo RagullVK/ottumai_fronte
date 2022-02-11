@@ -6,14 +6,14 @@ export const SidebarData =[
     
     {
         title: 'Home',
-        path: '/',
+        path: '/Home',
         icon: <aiIcons.AiFillHome/>,
         cName: 'nav-text'
     },
 
     {
         title: 'Publish',
-        path: '/publish',
+        path: '/Publish',
         icon: <ioIcons.IoIosPaper/>,
         cName: 'nav-text'
     },
