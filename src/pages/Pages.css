@@ -4,8 +4,13 @@
 .publish,
 .myAccount {
   background: linear-gradient(to top left, #231f20, black);
-  height: 90vh;
+  height: 89.3vh;
   display: flex;
+}
+
+.login {
+  background: url("../image/LoginCover.png");
+  background-color: #231f20;
 }
 
 .pageTitle {
@@ -13,7 +18,7 @@
   font-family: "Mochiy Pop P One", sans-serif;
   color: #ffb8bf;
   position: absolute;
-  left: 270px;
+  left: 240px;
   top: 20px;
   font-weight: 900;
   z-index: 3;
@@ -54,9 +59,21 @@
 }
 
 .logo {
-  height: 50px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   right: 25px;
-  top: 15px;
+  top: -4px;
+  filter: brightness(0) invert(1);
+}
+
+.loading {
+  background: linear-gradient(to top left, #231f20, black);
+  height: 100vh;
+  color: #ffb8bf;
+  padding-top: 300px;
+  padding-left: 700px;
+
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 1.5rem;
 }

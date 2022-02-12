@@ -11,7 +11,7 @@ function MyAccount() {
       <h1 className='smallHeading'>Add Title/ Links,</h1>
       <h1 className='bigHeading'>As a Reminder</h1>
       <h1 className='bigHeading2'>View Account Details</h1>
-      <img className='logo' src={require('../image/LogoR.png')}></img>
+      <img className='logo' src={require('../image/Logo.png')}></img>
       
       <LogoutButton/>
       <TrackList/>

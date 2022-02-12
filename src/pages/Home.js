@@ -26,7 +26,7 @@ function Home() {
   return <div className='home'>
       <h1 className='pageTitle' >Home</h1>
       <h1 className='bigHeading'>Select A Motive</h1>
-      <img className='logo' src={require('../image/LogoR.png')}></img>
+      <img className='logo' src={require('../image/Logo.png')}></img>
 
       <Button button={buttons} filter={filter}/>
       <Card motiveCard={motiveCard}/>

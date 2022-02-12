@@ -8,7 +8,7 @@ function Publish() {
       <h1 className='pageTitle'>Publish</h1>
       <h1 className='smallHeading'>Fill the</h1>
       <h1 className='bigHeading'>Required Information</h1>
-      <img className='logo' src={require('../image/LogoR.png')}></img>
+      <img className='logo' src={require('../image/Logo.png')}></img>
 
       <PublishDetails/>
   </div>;

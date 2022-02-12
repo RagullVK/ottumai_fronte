@@ -16,3 +16,26 @@
   color: white;
   transition: all 0.4s ease-out;
 }
+
+.login-con {
+  height: 745px;
+}
+
+.login-btn {
+  width: 20rem;
+  height: 5rem;
+  position: absolute;
+  margin-top: 330px;
+  margin-left: 620px;
+  border-radius: 4px;
+  background-color: #ffb8bf;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.4s ease-out;
+}
