@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+
+//This is was used for the frontend
+
 const useDetails = () =>{
     const [values,setValues] = useState({
         community:'',

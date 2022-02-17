@@ -5,7 +5,7 @@ function Button({button, filter}){
     return(
         <div className='buttons'>
             {
-                button.map((category, i) =>{
+                button.map((category) =>{
                     return <button type = 'button' onClick={()=> filter(category)}
                     className='btn'>{category}</button>
                 })

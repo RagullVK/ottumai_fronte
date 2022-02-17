@@ -1,132 +1,162 @@
-import React from 'react';
-import useDetails from './useDetails';
+import React, { useState } from 'react';
 import './PublishDetails.css'
+import Axios from 'axios';
 
 const PublishDetails = () => {
-  const {handleChange,values} = useDetails();
 
+  const [community, setCommunity] = useState('');
+  const [title, setTitle] = useState('');
+  const [cost, setCost] = useState('');
+  const [date, setDate] = useState('');
+  const [addi1, setAddi1] = useState('');
+  const [addi2, setAddi2] = useState('');
+  const [pobox, setPobox] = useState('');
+  const [link, setLink] = useState('');
+
+  const [eventList, setEventList] = useState([]);
+
+  const addEvent = () => {
+    Axios.post('http://localhost:3001/create', {
+      community: community,
+      title: title,
+      cost: cost,
+      date: date,
+      addi1: addi1,
+      addi2: addi2,
+      pobox: pobox,
+      link: link,
+    }).then (() => {
+      setEventList([
+        ...eventList,
+        {
+          community: community,
+          title: title,
+          cost: cost,
+          date: date,
+          addi1: addi1,
+          addi2: addi2,
+          pobox: pobox,
+          link: link,
+        },
+      ])
+    })
+  }
 
   return (
   <div className='form-content-right'>
       <form className='form'>
 
           <div className='form-inputs'>
-              <label htmlFor='community'
-               className='form-label'>
+              <label className='form-label'>
                 Community: 
               </label>
               <select type='text' 
-                    name='community'
                     className='form-input'
                     placeholder='Enter Community From Options Above As Depicted'
-                    onChange={handleChange}>
-                <option value = 'ACcomm'> African or Caribbean </option>  
-                <option value = 'SEAcomm'> East or South East Asain </option>
-                <option value = 'Hcomm'> Hispanic </option>
-                <option value = 'SAcomm'> South Asain </option>
-                <option value = 'SWEcomm'> South West European </option>
+                    onChange={(event) => {
+                      setCommunity(event.target.value);
+                    }}>
+                <option disabled selected hidden>Select The Relevant Community</option>     
+                <option> African or Caribbean </option>  
+                <option> East or South East Asian </option>
+                <option> Hispanic </option>
+                <option> South Asian </option>
+                <option> South West European </option>
               </select>       
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='address1'
-               className='form-label'>
+              <label className='form-label'>
                 Address Line 1: 
               </label>
               <input type='text' 
-                    name='address1'
                     className='form-input'
                     placeholder='Enter Address Line 1'
-                    value={values.address1}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setAddi1(event.target.value);
+                    }}
                     />
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='title'
-               className='form-label'>
+              <label className='form-label'>
                 Title:
               </label>
               <input type='text' 
-                    name='title'
                     className='form-input'
                     placeholder='Enter Event Name'
-                    value={values.title}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setTitle(event.target.value);
+                    }}
                     />
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='address2'
-               className='form-label'>
+              <label className='form-label'>
                 Address Line 2: 
               </label>
               <input type='text' 
-                    name='address2'
                     className='form-input'
                     placeholder='Enter Address Line 2'
-                    value={values.address2}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setAddi2(event.target.value);
+                    }}
                     />
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='cost'
-               className='form-label'>
+              <label className='form-label'>
                 Cost: 
               </label>
               <input type='text' 
-                    name='cost'
                     className='form-input'
                     placeholder='Enter Ticket Cost'
-                    value={values.cost}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setCost(event.target.value);
+                    }}
                     />
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='postcode'
-               className='form-label'>
+              <label className='form-label'>
                 Postcode: 
               </label>
               <input type='text' 
-                    name='postcode'
                     className='form-input'
                     placeholder='Enter Postcode'
-                    value={values.postcode}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setPobox(event.target.value);
+                    }}
                     />
           </div>
 
           
           <div className='form-inputs'>
-              <label htmlFor='date'
-               className='form-label'>
+              <label className='form-label'>
                 Date:  
               </label>
               <input type='text' 
-                    name='date'
                     className='form-input'
                     placeholder='Enter Event Date'
-                    value={values.date}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setDate(event.target.value);
+                    }}
                     />
           </div>
 
           <div className='form-inputs'>
-              <label htmlFor='link'
-               className='form-label'>
+              <label className='form-label'>
                 Link: 
               </label>
               <input type='link' 
-                    name='link'
                     className='form-input'
                     placeholder='Enter Link To Purchase Tickets'
-                    value={values.link}
-                    onChange={handleChange}
+                    onChange={(event) => {
+                      setLink(event.target.value);
+                    }}
                     />
           </div>
-          <button className='input-btn'
+          <button onClick = {addEvent} className='input-btn'
           type='submit'>
               Publish
           </button>
