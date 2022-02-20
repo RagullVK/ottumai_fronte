@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
+import Axios from 'axios';
 
 function TrackingForm(props) {
   
-  const [input, setInput] = useState(props.edit ? props.edit.value : '');
+  const [title2, setTitle2] = useState(props.edit ? props.edit.value : '');
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -11,22 +12,35 @@ function TrackingForm(props) {
   });
 
   const toChange = e => {
-      setInput(e.target.value);
+      setTitle2(e.target.value);
   }
  
+  const [tracking, setTracking] = useState([]);
   const [id,setId] =useState(0)
   const giveId=()=> {
-    setId(id+1)
-    return id
-  }
+  setId(id+1)
+  return id
+}
+
   const toSubmit = e => {
     e.preventDefault();
+    Axios.post('http://localhost:3001/createtracking', {
+      title2: title2,
+    }).then (() => {
+      setTracking([
+        ...tracking,
+        {
+          title2: title2,
+        },
+      ])
+    })
+
 
     props.onSubmit({
-        id: giveId(),
-        text: input
+        text: title2,
+        id: giveId
     });
-    setInput('');
+    setTitle2('');
   }
 
     return (
@@ -38,7 +52,7 @@ function TrackingForm(props) {
               name='text'
               className='tracking-input'
               placeholder='Update Tracking'
-              value={input}
+              value={title2}
               onChange={toChange}
               ref={inputRef}
             />
@@ -51,7 +65,7 @@ function TrackingForm(props) {
               name='text'
               className='tracking-input'
               placeholder='Enter Reminder to Track'
-              value={input}
+              value={title2}
               onChange={toChange}
               ref={inputRef}  
             />

@@ -23,13 +23,13 @@ function Track({tracking, completeTracking, removeTracking, updateTracking}) {
       </div>
 
       <div className='icons'>
-          <RiCloseCircleLine 
-            onClick={() => removeTracking(track.id)}
-            className='delete-icon' />
            <TiEdit
             onClick={() => setEdit({id: track.id, value: track.text})}
             className='edit-icon'
            /> 
+           <RiCloseCircleLine 
+            onClick={() => removeTracking(track.id)}
+            />
       </div>
   </div>));
 }

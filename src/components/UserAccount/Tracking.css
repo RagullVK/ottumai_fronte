@@ -8,6 +8,17 @@
   display: none;
 }
 
+.tracking-con2 {
+  margin-top: 9.4rem;
+  margin-left: 15rem;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.tracking-con2::-webkit-scrollbar {
+  display: none;
+}
+
 .tracking-form {
   margin-left: 15rem;
 }
@@ -21,6 +32,23 @@
   background-color: #231f20;
   outline: none;
   padding-left: 10px;
+  color: white;
+}
+
+.tracking-input2 {
+  height: 40px;
+  width: 300px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #ffb8bf;
+  background-color: #231f20;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+
+  padding-left: 10px;
+  padding-top: 10px;
   color: white;
 }
 
@@ -47,7 +75,9 @@
   margin: 10px auto;
   margin-left: 15rem;
   width: 400px;
+  height: 40px;
 
+  float: left;
   border-radius: 2px;
   border-style: solid;
   border-color: #ffb8bf;
@@ -60,13 +90,22 @@
 .icons {
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   color: #ffb8bf;
+  padding-right: 10px;
+}
+
+.delete-icon {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffb8bf;
+  padding-right: 10px;
 }
 
 .edit-icon {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .form-label {
