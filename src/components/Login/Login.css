@@ -2,7 +2,7 @@
   width: 12rem;
   height: 3rem;
   position: absolute;
-  margin-top: 10.2rem;
+  margin-top: 5.2rem;
   margin-left: 3px;
   border-radius: 4px;
   background-color: #ffb8bf;
@@ -19,8 +19,9 @@
 
 .logout-con {
   width: 225px;
-  margin-left: 55px;
-  margin-top: 26rem;
+  height: 150px;
+  margin-left: 53px;
+  margin-top: 30.8rem;
   padding-left: 10px;
   margin-bottom: 1rem;
   border-radius: 2px;

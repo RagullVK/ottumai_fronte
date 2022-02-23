@@ -8,16 +8,6 @@ function AccountDetails() {
   return (
     <div className='details-content'>
         <div className='form-inputs'>
-            <label htmlFor='username'
-               className='form-label'>
-                Username: 
-            </label>
-            <p type='text' name='username' className='form-display'>
-                {user.nickname}
-            </p>
-        </div>
-
-        <div className='form-inputs'>
             <label htmlFor='email'
                className='form-label'>
                 Email: 
