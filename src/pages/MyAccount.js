@@ -15,8 +15,8 @@ function MyAccount() {
       <h1 className='bigHeading2'>Your Events</h1>
       <img className='logo' src={require('../image/Logo.png')}></img>
       
-      <LogoutButton/>
       <TrackList/>
+      <LogoutButton/>
       <TrackingCard/>
     </div>
     </>

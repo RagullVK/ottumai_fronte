@@ -2,7 +2,7 @@ import './Motive.css';
 import Axios from "axios";
 import { useState } from 'react';
 
-function Card({motiveCard}){
+function Card(){
 
     const [eventList, setEventList] = useState([]);
 
@@ -15,7 +15,7 @@ function Card({motiveCard}){
     return (
         <>
         <div>
-           {getEvents()}  
+            {getEvents()}  
         </div>
         <div className="card">
             

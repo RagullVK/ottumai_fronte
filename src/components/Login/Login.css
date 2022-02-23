@@ -2,8 +2,8 @@
   width: 12rem;
   height: 3rem;
   position: absolute;
-  margin-top: 580px;
-  margin-left: 672px;
+  margin-top: 10.2rem;
+  margin-left: 3px;
   border-radius: 4px;
   background-color: #ffb8bf;
   border: none;
@@ -15,6 +15,17 @@
   cursor: pointer;
   color: white;
   transition: all 0.4s ease-out;
+}
+
+.logout-con {
+  width: 225px;
+  margin-left: 55px;
+  margin-top: 26rem;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  border: solid;
+  border-color: #ffb8bf;
 }
 
 .login-con {

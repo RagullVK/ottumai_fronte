@@ -1,6 +1,6 @@
 .tracking-con {
-  margin-top: 10rem;
-  height: 400px;
+  margin-top: 8rem;
+  height: 265px;
   overflow-y: scroll;
 }
 
@@ -9,9 +9,9 @@
 }
 
 .tracking-con2 {
-  margin-top: 9.4rem;
-  margin-left: 15rem;
-  height: 400px;
+  margin-top: 7.9rem;
+  margin-left: 40px;
+  height: 265px;
   overflow-y: scroll;
 }
 
@@ -20,12 +20,13 @@
 }
 
 .tracking-form {
-  margin-left: 15rem;
+  margin-left: 14rem;
 }
 
 .tracking-input {
   height: 40px;
-  width: 300px;
+  width: 280px;
+  margin-top: 10px;
   border-radius: 2px;
   border-style: solid;
   border-color: #ffb8bf;
@@ -73,11 +74,10 @@
   align-items: center;
   background-color: #231f20;
   margin: 10px auto;
-  margin-left: 15rem;
-  width: 400px;
+  margin-left: 14rem;
+  width: 380px;
   height: 40px;
 
-  float: left;
   border-radius: 2px;
   border-style: solid;
   border-color: #ffb8bf;
@@ -116,7 +116,7 @@
 }
 
 .form-inputs {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .form-display {
@@ -125,7 +125,7 @@
   padding-top: 10px;
   border-radius: 2px;
   height: 40px;
-  width: 400px;
+  width: 200px;
 
   outline: none;
   background-color: #231f20;
@@ -139,6 +139,5 @@
 }
 
 .details-content {
-  margin-left: 14rem;
-  margin-top: 8rem;
+  margin-top: 0rem;
 }

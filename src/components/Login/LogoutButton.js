@@ -1,6 +1,8 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import React from 'react'
 import './Login.css'
+import '../UserAccount/AccountDetails'
+import AccountDetails from '../UserAccount/AccountDetails';
 
 const LogoutButton = () => {
 
@@ -11,6 +13,7 @@ const LogoutButton = () => {
       <button onClick={() => logout()} className='logout-btn'>
           Sign Out
       </button>
+      <AccountDetails/>
     </div>  
   )
 }
