@@ -17,10 +17,26 @@ function TrackingForm(props) {
  
   const [tracking, setTracking] = useState([]);
   const [id,setId] =useState(0)
+
+  const getTracking = () => {
+    Axios.get('http://localhost:3001/tracking').then((response) => {
+       setTracking(response.data);
+    });
+  }
+  
   const giveId=()=> {
-  setId(id+1)
-  return id
-}
+  return (
+    <div>
+      {getTracking}
+      {
+        tracking.map((card) => {
+          return (<a key={card.id}/>)
+        })
+      }
+    </div>
+  )
+  }
+
 
   const toSubmit = e => {
     e.preventDefault();
@@ -34,7 +50,6 @@ function TrackingForm(props) {
         },
       ])
     })
-
 
     props.onSubmit({
         text: title2,
@@ -70,7 +85,7 @@ function TrackingForm(props) {
               ref={inputRef}  
             />
             <button onClick={toSubmit} className='tracking-btn'>Track</button>
-          </>          
+          </>    
       )}
   </form>
   );

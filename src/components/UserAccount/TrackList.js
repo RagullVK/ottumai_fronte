@@ -3,6 +3,7 @@ import { useState } from 'react/cjs/react.development';
 import Track from './Track';
 import TrackingForm from './TrackingForm';
 import './Tracking.css'
+import Axios from 'axios';
 
 function TrackList() {
 
@@ -17,13 +18,20 @@ function TrackList() {
         setTracking(newTracking);
     };
 
+
+
     const updateTracking = (trackId, newValue) => {
         setTracking(prev => prev.map(item => (item.id === trackId ? newValue : item)));
     }
 
-    const removeTracking = id => {
-        const removeArr = [...tracking].filter(track => track.id !== id);
-        setTracking(removeArr);
+    const removeTracking = (id) => {
+        Axios.delete(`http://localhost:3001/deletetracking/${id}`).then((response) => {
+            setTracking(
+              tracking.filter((track) => {
+                return track.id != id;
+              })
+            );
+          });
     }
 
     const completeTracking = id =>{
@@ -38,7 +46,7 @@ function TrackList() {
 
   return (
   <div className='tracking-con'> 
-      <TrackingForm onSubmit = {addTrack} />
+      <TrackingForm onSubmit = {addTrack}  />
       <Track 
         tracking={tracking} 
         completeTracking={completeTracking} 
