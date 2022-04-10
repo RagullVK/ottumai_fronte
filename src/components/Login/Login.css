@@ -54,7 +54,7 @@
   transition: all 0.4s ease-out;
 }
 
-.bigHeading {
+.bigHeading3 {
   font-size: 2.5rem;
   font-family: "Mochiy Pop P One", sans-serif;
   color: #ffb8bf;
@@ -65,7 +65,7 @@
   z-index: 1;
 }
 
-.bigHeading2 {
+.bigHeading4 {
   font-size: 2.5rem;
   font-family: "Mochiy Pop P One", sans-serif;
   color: #ffb8bf;

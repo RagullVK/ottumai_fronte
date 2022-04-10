@@ -9,8 +9,8 @@ const LoginButton = () => {
   return (
     !isAuthenticated && (
       <div className='login-con'>
-        <h1 className='bigHeading'>What better way of learning,</h1>
-        <h1 className='bigHeading2'>than getting involved?</h1>
+        <h1 className='bigHeading3'>What better way of learning,</h1>
+        <h1 className='bigHeading4'>than getting involved?</h1>
         <button onClick = {() => loginWithRedirect()} className='login-btn'>
            Enter Ottumai
         </button>
