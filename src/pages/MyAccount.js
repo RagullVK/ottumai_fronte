@@ -12,7 +12,7 @@ function MyAccount() {
       <h1 className='pageTitle'>My Account</h1>
       <h1 className='smallHeading'>Add Title/ Links,</h1>
       <h1 className='bigHeading'>As a Reminder</h1>
-      <h1 className='bigHeading2'>Your Events</h1>
+      <h1 className='bigHeading2'>Your Motives</h1>
       <img className='logo' src={require('../image/Logo.png')}></img>
       
       <TrackList/>
